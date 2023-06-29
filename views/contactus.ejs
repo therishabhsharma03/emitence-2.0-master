@@ -1,0 +1,146 @@
+
+<%- include('include/_header')%>
+<!-- /including footer -->
+
+   
+
+    <div class="hero">
+      <div class="hero-slide">
+        <div
+          class="img overlay"
+          style="background-image: url('images/hero_bg_3.png')"
+        ></div>
+        <!-- <div
+          class="img overlay"
+          style="background-image: url('images/hero_bg_2.jpg')"
+        ></div> -->
+        <div
+          class="img overlay"
+          style="background-image: url('images/hero_bg_1.jpg')"
+        ></div>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-9 text-center">
+            <h1 class="heading" data-aos="fade-up">
+              Easiest way to find your dream home
+            </h1>
+            <!-- <form
+              action="#"
+              class="narrow-w form-search d-flex align-items-stretch mb-3"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <input
+                type="text"
+                class="form-control px-4"
+                placeholder="Your ZIP code or City. e.g. New York"
+              />
+              <button type="submit" class="btn btn-primary">Search</button>
+            </form> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+  
+
+
+
+
+
+
+  <!-- ********************************************************************* -->
+
+
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-4 mb-5 mb-lg-0"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="contact-info">
+              <div class="address mt-2">
+                <i class="icon-room"></i>
+                <h4 class=" white mb-2">Location:</h4>
+                <p class="white">
+                  Mumbai,<br />
+                  Maharashtra
+                </p>
+              </div>
+
+              <div class="open-hours mt-4">
+                <i class="icon-clock-o"></i>
+                <h4 class="white mb-2">Open Hours:</h4>
+                <p class="white">
+                  Sunday-Friday:<br />
+                  11:00 AM - 2300 PM
+                </p>
+              </div>
+
+              <div class="email mt-4">
+                <i class="icon-envelope"></i>
+                <h4 class="white mb-2">Email:</h4>
+                <p class="white">emitencerealty@gmail.com</p>
+              </div>
+
+              <div class="phone mt-4">
+                <i class="icon-phone"></i>
+                <h4 class="white mb-2">Call:</h4>
+                <p class="white">+91 9159155237</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200" id="contact">
+            <form id="flatEnquiryForm" action="/submit" method="post">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required><br><br>
+          
+              <label for="contactNumber">Contact Number:</label>
+              <input type="text" id="contactNumber" name="contactNumber" required><br><br>
+          
+              <label for="location">Preferred City:</label>
+              <select id="location" name="location">
+                <option value="Mumbai">Mumbai</option>
+                <option value="Navi Mumbai">Navi Mumbai</option>
+                <option value="Thane">Thane</option>
+              
+              </select><br><br>
+          
+              <label for="flatType">Flat Type:</label>
+              <input type="radio" id="1bhk" name="flatType" value="1BHK">
+              <label for="1bhk">1 BHK</label>
+              <input type="radio" id="2bhk" name="flatType" value="2BHK">
+              <label for="2bhk">2 BHK</label>
+              <input type="radio" id="3bhk" name="flatType" value="3BHK">
+              <label for="3bhk">3 BHK</label>
+              <input type="radio" id="4bhk" name="flatType" value="4BHK">
+              <label for="4bhk">4 BHK</label><br><br>
+              <label for="budget">Budget:</label>
+              <select id="budget" name="budget">
+                <option value="1cr - 2cr">1cr - 2cr</option>
+                <option value="2cr - 3cr">2cr - 3cr</option>
+                <option value="3cr - 4cr">3cr - 4cr</option>
+                <option value="4cr - 5cr">4cr - 5cr</option>
+                <option value="5cr - 6cr">5cr - 6cr</option>
+                <option value="6cr - 7cr">6cr - 7cr</option>
+                <option value="7cr - 8cr">7cr - 8cr</option>
+                <option value="8cr - 9cr">8cr - 9cr</option>
+                <option value="9cr - 10cr">9cr - 10cr</option>
+              </select><br><br>
+          
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <!-- including footer -->
+<%- include('include/_footer')%>
+<!-- /including footer -->

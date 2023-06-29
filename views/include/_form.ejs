@@ -1,0 +1,49 @@
+<div id="overlay">
+
+   
+</div>
+<div id="formContainer">
+
+
+<h2>Flat Enquiry Form</h2>
+<form id="flatEnquiryForm" action="/submit" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="contactNumber">Contact Number:</label>
+    <input type="text" id="contactNumber" name="contactNumber" required><br><br>
+
+    <label for="location">Preferred City:</label>
+    <select id="location" name="location">
+      <option value="Mumbai">Mumbai</option>
+      <option value="Navi Mumbai">Navi Mumbai</option>
+      <option value="Thane">Thane</option>
+    
+    </select><br><br>
+
+    
+    <label for="flatType">Flat Type:</label>
+    <input type="radio" id="1bhk" name="flatType" value="1BHK">
+    <label for="1bhk">1 BHK</label>
+    <input type="radio" id="2bhk" name="flatType" value="2BHK">
+    <label for="2bhk">2 BHK</label>
+    <input type="radio" id="3bhk" name="flatType" value="3BHK">
+    <label for="3bhk">3 BHK</label>
+    <input type="radio" id="4bhk" name="flatType" value="4BHK">
+    <label for="4bhk">4 BHK</label><br><br>
+    <select id="budget" name="budget">
+        <option value="1cr - 2cr">1cr - 2cr</option>
+        <option value="2cr - 3cr">2cr - 3cr</option>
+        <option value="3cr - 4cr">3cr - 4cr</option>
+        <option value="4cr - 5cr">4cr - 5cr</option>
+        <option value="5cr - 6cr">5cr - 6cr</option>
+        <option value="6cr - 7cr">6cr - 7cr</option>
+        <option value="7cr - 8cr">7cr - 8cr</option>
+        <option value="8cr - 9cr">8cr - 9cr</option>
+        <option value="9cr - 10cr">9cr - 10cr</option>
+      </select><br><br>
+  
+    <input type="submit" value="Submit">
+  </form>
+  <span id="closeButton" onclick="closeFormPopup()">X</span>
+</div>

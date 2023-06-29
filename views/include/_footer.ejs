@@ -1,0 +1,205 @@
+
+<div class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Contact</h3>
+            <address>Mumbai , Maharashtra</address>
+            <ul class="list-unstyled links">
+              <li><a href="tel://919159155237">+91 9159155237</a></li>
+             
+              <li>
+                <!-- <a href="mailto:customercare@eminentrealty.com">customercare@eminentrealty.com</a> -->
+              </li>
+            </ul>
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Sources</h3>
+            <ul class="list-unstyled float-start links">
+              <li><a href="about">About us</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+            </ul>
+            <ul class="list-unstyled float-start links">
+
+            </ul>
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Links</h3>
+            <ul class="list-unstyled links">
+           
+              <li><a href="">About us</a></li>
+            
+            </ul>
+
+            <ul class="">
+              <li>
+                <a href="https://instagram.com/emitence_realty?igshid=MzRlODBiNWFlZA==">Instagram</a>
+              </li>
+              
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=100093143864694">Facebook</a>
+              </li>
+         
+            </ul>
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /.col-lg-4 -->
+      </div>
+      <!-- /.row -->
+
+      <div class="row mt-5">
+        <div class="col-12 text-center">
+          <!-- 
+            **==========
+            NOTE: 
+            Please don't remove this copyright link unless you buy the license here https://untree.co/license/  
+            **==========
+          -->
+
+         
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.site-footer -->
+
+  <!-- Preloader -->
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+
+
+
+  <script>
+    // Function to show the corner popup message
+    function showCornerPopup(message) {
+      const cornerPopup = document.getElementById('cornerPopup');
+      cornerPopup.textContent = message;
+      cornerPopup.classList.add('show');
+  
+      setTimeout(function() {
+        cornerPopup.classList.remove('show');
+      }, 3000);
+    }
+  
+    // Function to check if the form has already been submitted
+    function checkFormSubmitted() {
+      const formSubmitted = localStorage.getItem('formSubmitted');
+      return formSubmitted === 'true';
+    }
+  
+    // Function to set the form as submitted
+    function setFormSubmitted() {
+      localStorage.setItem('formSubmitted', 'true');
+    }
+  
+    // Wait for the page to load
+    document.addEventListener("DOMContentLoaded", function() {
+      // Check if the form has already been submitted
+      const formAlreadySubmitted = checkFormSubmitted();
+      
+      if (!formAlreadySubmitted) {
+        // Set timeout for showing the pop-up form after 5 seconds
+        setTimeout(function() {
+          showFormPopup();
+        }, 5000);
+      }
+    });
+  
+    // Function to show the pop-up form
+    function showFormPopup() {
+      // Add the blur class to the body
+      document.body.classList.add("blur");
+      // Display the overlay and form container
+      document.getElementById("overlay").style.display = "block";
+      document.getElementById("formContainer").style.display = "block";
+    }
+  
+    // Function to close the pop-up form
+    function closeFormPopup() {
+      // Remove the blur class from the body
+      document.body.classList.remove("blur");
+      // Hide the overlay and form container
+      document.getElementById("overlay").style.display = "none";
+      document.getElementById("formContainer").style.display = "none";
+    }
+  
+    const form = document.getElementById('flatEnquiryForm');
+  
+    form.addEventListener('submit', (event) => {
+      event.preventDefault(); // Prevent the form from submitting normally
+  
+      const name = document.getElementById('name').value;
+      const contactNumber = document.getElementById('contactNumber').value;
+      const location = document.getElementById('location').value;
+      const flatType = document.querySelector('input[name="flatType"]:checked').value;
+      const budget = document.getElementById('budget').value;
+  
+      // Prepare the data to be sent
+      const data = {
+        name: name,
+        contactNumber: contactNumber,
+        location: location,
+        flatType: flatType,
+        budget: budget
+      };
+  
+      // Send the data to the server-side script for processing
+      fetch('/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      })
+        .then(response => {
+          if (response.ok) {
+            // Show the success message as a corner popup
+            showCornerPopup('Message sent successfully!');
+            // Reset the form
+            form.reset();
+            // Close the form popup after 2 seconds
+            setTimeout(closeFormPopup, 2000);
+            // Set the form as submitted
+            setFormSubmitted();
+          } else {
+            // Display an error message to the user
+            console.log('Error submitting the form. Please try again.');
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          console.log('An error occurred while submitting the form. Please try again later.');
+        });
+    });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
+
+  <script src="js/main.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/tiny-slider.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/counter.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+</html>
