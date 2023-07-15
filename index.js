@@ -58,7 +58,7 @@ app.post('/submit', (req, res) => {
   // Define the email options
   const mailOptions = {
     from: 'apicheck11@gmail.com',
-    to: 'emitencerealty@gmail.com', // Replace with the admin email address
+    to: 'manyrishabh@gmail.com', // Replace with the admin email address
     subject: 'New Flat Enquiry',
     html: emailContent
   };
