@@ -426,42 +426,38 @@
           </div>
         </div>
         <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200" id="contact">
-            <form id="flatEnquiryForm" action="/submit" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
+          <form id="flatEnquiryForm" action="/submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name"><br><br>
+          
+            <label for="contactNumber">Contact Number:</label>
+            <input type="text" id="contactNumber" placeholder="Phone Number" name="contactNumber" required><br><br>
+          
+            <label for="location">Preferred City:</label>
+            <select id="location" name="location">
+              <option value="Mumbai">Mumbai</option>
+              <option value="Navi Mumbai">Navi Mumbai</option>
+              <option value="Thane">Thane</option>
             
-                <label for="contactNumber">Contact Number:</label>
-                <input type="text" id="contactNumber" name="contactNumber" required><br><br>
-            
-                <label for="location">Preferred City:</label>
-                <select id="location" name="location">
-                  <option value="Mumbai">Mumbai</option>
-                  <option value="Navi Mumbai">Navi Mumbai</option>
-                  <option value="Thane">Thane</option>
-                
-                </select><br><br>
-            
-                <label for="flatType">Flat Type:</label>
-                <input type="radio" id="1 RK" name="flatType" value="1 RK">
-                <label for="1 RK">1 RK</label>
-                <input type="radio" id="5 BHK Jodi" name="flatType" value="5 BHK Jodi">
-                <label for="5 BHK Jodi">5 BHK Jodi</label>
-                <input type="radio" id="penthouse
-                " name="flatType" value="penthouse
-                ">
-                <label for="3bhk">penthouse
-                </label>
-                <!-- <input type="radio" id="4bhk" name="flatType" value="4BHK">
-                <label for="4bhk">4 BHK</label><br><br> -->
-                <label for="budget">Budget:</label>
-                <select id="budget" name="budget">
-                  <option value="10 To 15 Cr ">10 To 15 Cr</option>
-                  <option value="15 to 20 Cr">15 to 20 Cr</option>
-               
-                </select><br><br>
-            
-                <input type="submit" value="Submit">
-              </form>
+            </select><br><br>
+          
+            <label for="flatType">Flat Type:</label>
+           
+            <select id="flatType" name="flatType">
+              <option value="1 RK">1 RK</option>
+              <option value="5 BHK Jodi">5 BHK Jodi</option>
+              <option value="Penthouse">Penthouse</option>
+           
+            </select>
+            <label for="budget">Budget:</label>
+            <select id="budget" name="budget">
+              <option value="10 To 15 Cr ">10 To 15 Cr</option>
+              <option value="15 to 20 Cr">15 to 20 Cr</option>
+           
+            </select><br><br>
+          
+            <input type="submit" value="Submit">
+          </form>
           
             </div>
         </div>
