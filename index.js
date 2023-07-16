@@ -76,7 +76,7 @@ app.post('/submit', (req, res) => {
 });
 
 // Start the server
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8088;
 app.listen(PORT, () => {
   console.log(`Server is working on http://localhost:${PORT}`);
 });
