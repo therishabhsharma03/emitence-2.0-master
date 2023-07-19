@@ -16,6 +16,13 @@
 /* ************************************************************************************************** */
 /* Styling for the form container */
 
+.container32{
+  display: grid;
+
+  
+}
+
+
 .privacy{
   width: 80%;
   margin-left: 10%;
@@ -694,8 +701,11 @@ input[type="range"] {
       content: "\2014\00A0"; }
   
   .img-fluid {
-    max-width: 100%;
-    height: auto; }
+    margin-left: 10%;
+    max-width: 80%;
+    height: auto; 
+  }
+
   
   .img-thumbnail {
     padding: 0.25rem;
@@ -767,7 +777,7 @@ input[type="range"] {
       max-width: 100%;
       padding-right: calc(var(--bs-gutter-x) * .5);
       padding-left: calc(var(--bs-gutter-x) * .5);
-      margin-top: var(--bs-gutter-y); }
+      margin-top: -5px; }
   
   .col {
     -webkit-box-flex: 1;
@@ -7108,7 +7118,8 @@ input[type="range"] {
   
   .text-black-50, body {
     --bs-text-opacity: 1;
-    color: rgba(0, 0, 0, 0.5) !important; }
+    color: rgba(0, 0, 0, 0.5) !important;
+  font-size: 15px }
   
   .text-white-50 {
     --bs-text-opacity: 1;
@@ -10208,9 +10219,9 @@ input[type="range"] {
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%); }
     .feature-h .feature-text {
-      margin-top: 15px; }
+      margin-top: 50px; }
       .feature-h .feature-text .heading {
-        font-size: 18px; }
+        font-size: 25px; }
     .feature-h:hover .wrap-icon, .feature-h:focus .wrap-icon {
       border: 2px solid #fff;
       background-color: transparent;
@@ -10374,6 +10385,7 @@ input[type="range"] {
   .features-1 {
     padding-top: 30px;
     position: relative;
+    margin-bottom: -70px;
     z-index: 1;
     text-align: center;
     background-color: rgba(0, 32, 74, 0.05); }
