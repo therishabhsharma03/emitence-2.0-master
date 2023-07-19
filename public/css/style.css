@@ -15,6 +15,13 @@
  */
 /* ************************************************************************************************** */
 /* Styling for the form container */
+.privacy{
+  width: 80%;
+  margin-left: 10%;
+  /* text-align: justify;
+  text-justify: inter-word; */
+
+}
 #flatEnquiryForm {
   max-width: 400px;
   margin: 0 auto;
@@ -177,6 +184,14 @@ input[type="range"] {
     color: #cacaca;
     font-size: 15px;
    }
+   .white-36{
+    color: #cacaca;
+    font-size: 25px;
+   }
+   .white-16{
+    color: #cacaca;
+    font-size: 16px;
+   }
    .white-18{
     color: #cacaca;
     font-size: 18px;
@@ -247,6 +262,7 @@ input[type="range"] {
     --bs-body-color-rgb: 33, 37, 41;
     --bs-body-bg-rgb: 255, 255, 255;
     --bs-font-sans-serif: "Work Sans", sans-serif;
+    /* --bs-font-sans-serif: 'Sora', sans-serif; */
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
     --bs-body-font-family: var(--bs-font-sans-serif);
@@ -10530,6 +10546,7 @@ input[type="range"] {
   
   .site-footer {
     background: #efefef;
+   
     font-size: 14px;
     color: #888;
     padding: 70px 0; }

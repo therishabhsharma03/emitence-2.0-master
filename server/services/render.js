@@ -19,3 +19,8 @@ exports.contact=(req,res)=>{
     res.render('contactus.ejs');
    
 }
+exports.policy=(req,res)=>{
+    // make a get request to /api/users/
+    res.render('policy.ejs');
+   
+}

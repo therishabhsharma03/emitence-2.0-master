@@ -62,6 +62,7 @@ route.post('/submit', (req, res) => {
   route.get('/services', services.service);
   route.get('/about', services.about);
   route.get('/contact', services.contact);
+  route.get('/policy', services.policy);
 
 
 
