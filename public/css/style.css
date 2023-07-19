@@ -7245,6 +7245,15 @@ input[type="range"] {
   
   .invisible {
     visibility: hidden !important; }
+
+    .w{
+      width: 23%;
+    }
+    @media (min-width: 576px){
+      .w{
+        width: 16% ;
+      }
+    }
   
   @media (min-width: 576px) {
     .float-sm-start {
