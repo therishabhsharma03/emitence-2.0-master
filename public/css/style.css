@@ -40,14 +40,14 @@
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #000000;
+  background-color: #161616;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
 }
 
 /* Styling for form labels */
 label {
-  font-weight: bold;
+  font-weight: 600;
   color: #ffffff;
   margin-bottom: 5px;
 }
@@ -57,7 +57,7 @@ input[type="text"],
 select {
   width: 100%;
   padding: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   border: none;
   border-radius: 4px;
   background-color: #ffffff;
@@ -66,7 +66,7 @@ select {
 
 /* Styling for radio buttons */
 input[type="radio"] {
-  margin-right: 2px;
+  margin-right: 10px;
 }
 
 input[type="radio"][id="1bhk"] + label,
@@ -78,7 +78,7 @@ input[type="radio"][id="4bhk"] + label {
 
 /* Styling for the submit button */
 input[type="submit"] {
-  background-color: #4caf50;
+  background-color: #000000;
   color: #ffffff;
   padding: 10px 20px;
   border: none;
@@ -111,7 +111,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #2d2d2d;
 }
 
 input[type="text"],
@@ -160,7 +160,7 @@ input[type="range"] {
   transform: translate(-50%, -50%);
   width: 400px;
   padding: 20px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(22 22 22);
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   z-index: 9999;
@@ -192,7 +192,10 @@ input[type="range"] {
     ;
   }
    .white{
-    color: white;
+    color: rgb(255, 255, 255);
+   }
+   .gold{
+    color: #ffc107;
    }
    .white-15{
     color: #cacaca;
@@ -304,7 +307,7 @@ input[type="range"] {
     line-height: var(--bs-body-line-height);
     color: var(--bs-body-color);
     text-align: var(--bs-body-text-align);
-    background-color: var(--bs-body-bg);
+    background-color: #000000;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
   
@@ -500,7 +503,7 @@ input[type="range"] {
     border-width: 0; }
   
   label {
-    display: inline-block; }
+    display: flex; }
   
   button {
     border-radius: 0; }
@@ -10541,9 +10544,9 @@ input[type="range"] {
   .contact-info i {
     font-size: 20px;
     float: left;
-    width: 44px;
+    width: 6px;
     height: 44px;
-    background: #00204a;
+    background: #161616;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -10569,7 +10572,7 @@ input[type="range"] {
     font-size: 14px; }
   
   .site-footer {
-    background: #efefef;
+    background: #;
    
     font-size: 14px;
     color: #888;
@@ -10597,7 +10600,7 @@ input[type="range"] {
         font-weight: 700;
         text-transform: uppercase;
         margin-bottom: 15px;
-        color: #00204a; }
+        color: #d9d9d9; }
       .site-footer .widget .links {
         width: 150px; }
         .site-footer .widget .links li {

@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
 // Route for handling the form submission
 app.post('/submit', (req, res) => {
   // Extract the user data from the request body
-  const { name, contactNumber, location, flatType, budget } = req.body;
+  const { name, contactNumber, location, flatType, budget,remarks } = req.body;
 
   // Create the email content
   const emailContent = `
@@ -41,6 +41,7 @@ app.post('/submit', (req, res) => {
     <p><strong>Preferred Location:</strong> ${location}</p>
     <p><strong>Flat Type:</strong> ${flatType}</p>
     <p><strong>Budget:</strong> ${budget}</p>
+    <p><strong>Message:</strong> ${remarks}</p>
   `;
 
   // Configure the nodemailer transport

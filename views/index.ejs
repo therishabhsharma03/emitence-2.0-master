@@ -462,7 +462,7 @@
         <div class="contact-info">
           <div class="address mt-2">
             <i class="icon-room"></i>
-            <h4 class=" white mb-2">Location:</h4>
+            <h4 class=" gold mb-2">Location:</h4>
             <p class="white">
               Mumbai,<br />
               Maharashtra
@@ -471,7 +471,7 @@
 
           <div class="open-hours mt-4">
             <i class="icon-clock-o"></i>
-            <h4 class="white mb-2">Open Hours:</h4>
+            <h4 class="gold mb-2">Open Hours:</h4>
             <p class="white">
               Monday Closed<br />
               10:00 AM - 7:00 PM
@@ -480,13 +480,13 @@
 
           <div class="email mt-4">
             <i class="icon-envelope"></i>
-            <h4 class="white mb-2">Email:</h4>
+            <h4 class="gold mb-2">Email:</h4>
             <p class="white">emitencerealty@gmailcom</p>
           </div>
 
           <div class="phone mt-4">
             <i class="icon-phone"></i>
-            <h4 class="white mb-2">Call:</h4>
+            <h4 class="gold mb-2">Call:</h4>
             <p class="white">+91 7009246165</p>
           </div>
         </div>
@@ -494,11 +494,11 @@
         <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200" id="contact">
           <form id="flatEnquiryForm" action="/submit" method="post">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Name"><br><br>
-          
+            <input type="text" id="name" placeholder="Name" name="name" required><br><br>
+        
             <label for="contactNumber">Contact Number:</label>
             <input type="text" id="contactNumber" placeholder="Phone Number" name="contactNumber" required><br><br>
-          
+        
             <label for="location">Preferred City & Location:</label>
             <select id="location" name="location">
               <option value="Mumbai">Mumbai</option>
@@ -506,21 +506,26 @@
               <option value="Thane">Thane</option>
             
             </select><br><br>
-          
-            <label for="flatType">Typology</label>
-           
-            <select id="flatType" name="flatType">
-              <option value="1 RK">1 RK</option>
-              <option value="5 BHK Jodi">5 BHK Jodi</option>
-              <option value="Penthouse">Penthouse</option>
-           
-            </select>
+        
+            
+            <label for="flatType">Typology:</label>
+            <label for="1bhk"><input type="radio" id="1bhk" name="flatType" value="1 RK">1 RK </label>
+            
+            <label for="2bhk"><input type="radio" id="2bhk" name="flatType" value="5 BHK Jodi">5 BHK Jodi </label>
+            
+            <label for="3bhk"><input type="radio" id="3bhk" name="flatType" value="Penthouse">Penthouse  </label>
+            
+            <br>
+        
             <label for="budget">Budget:</label>
             <select id="budget" name="budget">
               <option value="10 To 15 Cr ">10 To 15 Cr</option>
               <option value="15 to 20 Cr">15 to 20 Cr</option>
            
             </select><br><br>
+
+            <label for="remarks">Message:</label>
+            <input type="text" id="remarks" placeholder="Drop a message (optional)" name="remarks" >
           
             <input type="submit" value="Submit">
           </form>

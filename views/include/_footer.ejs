@@ -161,6 +161,7 @@
     const location = document.getElementById('location').value;
     const flatType = document.querySelector('input[name="flatType').value;
     const budget = document.getElementById('budget').value;
+    const remarks = document.getElementById('remarks').value;
 
     // Prepare the data to be sent
     const data = {
@@ -168,7 +169,8 @@
       contactNumber: contactNumber,
       location: location,
       flatType: flatType,
-      budget: budget
+      budget: budget,
+      remarks: remarks,
     };
 
     // Send the data to the server-side script for processing
