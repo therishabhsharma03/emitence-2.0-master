@@ -67,6 +67,7 @@ select {
 /* Styling for radio buttons */
 input[type="radio"] {
   margin-right: 10px;
+  accent-color: #ffc107;
 }
 
 input[type="radio"][id="1bhk"] + label,
