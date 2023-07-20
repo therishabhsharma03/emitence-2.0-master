@@ -17,7 +17,9 @@
  */
 
  /* ******************************************************************************************************* */
-
+.about-gold-size{
+  font-size: 20px;
+}
 
 /* ************************************************************************************************** */
 /* Styling for the form container */
@@ -9994,15 +9996,20 @@ input[type="range"] {
           top: 0;
           z-index: 1;
           background: rgba(34, 34, 34, 0.4); }
-  
+          .about-head{
+            font-size: 35px;
+          }
+          @media (max-width: 767.98px) {
+            .about-head {
+              font-size: 30px; } }
   .section {
     padding-top: 4rem;
     padding-bottom: 4rem; }
     .section .heading {
-      font-weight: 500; }
+      font-size: 20px; }
       @media (max-width: 767.98px) {
         .section .heading {
-          font-size: 36px; } }
+          font-size: 18px; } }
   
   .testimonial blockquote {
     font-style: 18px;
@@ -10235,6 +10242,8 @@ input[type="range"] {
         transform: translate(-50%, -50%); }
     .feature-h .feature-text {
       margin-top: 50px; }
+    .feature-h .feature-text-about{
+      margin-top: 0px; }
       .feature-h .feature-text .heading {
         font-size: 25px; }
     .feature-h:hover .wrap-icon, .feature-h:focus .wrap-icon {
