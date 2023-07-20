@@ -10582,9 +10582,9 @@ input[type="range"] {
       color: #777;
       position: relative;
       display: inline-block;
-      text-decoration: underline; }
+      text-decoration: none; }
       .site-footer a:hover {
-        color: #000;
+        color: white;
         text-decoration: none; }
         .site-footer a:hover:before {
           background: #00204a; }

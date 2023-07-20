@@ -18,7 +18,7 @@ route.post('/submit', (req, res) => {
   
     // Create the email content
     const emailContent = `
-      <h2>New Flat Enquiry</h2>
+      <h2>Flat Enquiry by ${name} </h2>
       <p><strong>Name:</strong> ${name}</p>
       <p><strong>Contact Number:</strong> ${contactNumber}</p>
       <p><strong>Preferred Location:</strong> ${location}</p>
