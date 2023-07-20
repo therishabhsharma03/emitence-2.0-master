@@ -24,7 +24,7 @@ route.post('/submit', (req, res) => {
       <p><strong>Preferred Location:</strong> ${location}</p>
       <p><strong>Flat Type:</strong> ${flatType}</p>
       <p><strong>Budget:</strong> ${budget}</p>
-      <p><strong>Budget:</strong> ${remarks}</p>
+      <p><strong>Message:</strong> ${remarks}</p>
     `;
   
     // Configure the nodemailer transport
