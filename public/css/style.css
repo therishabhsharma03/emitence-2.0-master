@@ -21,6 +21,7 @@
   font-size: 20px;
 }
 
+
 /* ************************************************************************************************** */
 /* Styling for the form container */
 
@@ -10416,6 +10417,23 @@ input[type="range"] {
   
   .box-feature {
     background: #d8d8d8;
+    border-radius: 4px;
+    padding: 30px;
+    box-shadow: -9px 10px 17px #7e7e7e;
+    margin-bottom: 30px; }
+    .box-feature h3, .box-feature .h3 {
+      font-size: 16px;
+      margin: 0;
+      padding: 0; }
+    .box-feature [class^="flaticon-"] {
+      color: #00204a;
+      font-size: 60px;
+      margin: 0 0 10px 0;
+      display: block;
+      padding: 0;
+      line-height: 0; }
+  .box-feature-about{
+    background: #000;
     border-radius: 4px;
     padding: 30px;
     box-shadow: -9px 10px 17px #7e7e7e;
