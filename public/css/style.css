@@ -42,7 +42,7 @@
 #flatEnquiryForm {
   max-width: 400px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
   background-color: #161616;
   border-radius: 10px;
 
@@ -52,7 +52,7 @@
 label {
   font-weight: 600;
   color: #ffffff;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 /* Styling for form inputs */
@@ -60,7 +60,7 @@ input[type="text"],
 select {
   width: 100%;
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   border: none;
   border-radius: 4px;
   background-color: #ffffff;
@@ -159,11 +159,11 @@ input[type="range"] {
  #formContainer {
   display: none;
   position: fixed;
-  top: 55%;
+  top: 58%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
-  padding: 20px;
+  padding: 8px;
   background-color: rgb(22 22 22);
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -9449,7 +9449,7 @@ input[type="range"] {
       color: #fff !important; }
   
   .site-nav {
-    padding-top: 20px;
+    padding-top: 18px;
     padding-bottom: 20px;
     position: absolute;
     top: 0;
