@@ -57,12 +57,14 @@
   iframe{
     width: 90%;
     height: 100%;
+    border-radius: 10px;
   }
   @media (max-width: 760px) {
     iframe{
       margin: auto;
       width: 90%;
       height: 50%;
+      border-radius: 10px;
     } }
 
   
