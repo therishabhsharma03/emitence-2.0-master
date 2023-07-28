@@ -15,7 +15,60 @@
 
  
  */
+       /* CSS to make the video responsive */
+    .youtube{
+      margin: auto;
+      margin-left: 0;
+    }
+    .a{
+      display: flex;
+    }
+    .video{
+      display: flex;
+    }
+    @media (max-width: 760px) {
+      .video{
+        display: block; } }
+    .video-slots {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    
+    .video-container {
+        position: relative;
+        width:100%;
+        cursor: pointer;
+        height: 50vh;
+        margin-bottom: 25px;
+        margin: 10px;
+    }
+    @media (max-width: 760px) {
+      .video-container{
+        position: relative;
+        width:100%;
+        cursor: pointer;
+        height: 50vh;
+        margin-bottom: 25px;
+        padding: 10px; } }
+    
 
+    
+  iframe{
+    width: 90%;
+    height: 100%;
+  }
+  @media (max-width: 760px) {
+    iframe{
+      margin: auto;
+      width: 90%;
+      height: 50%;
+    } }
+
+  
+  
+  
+  
  /* ******************************************************************************************************* */
 .about-gold-size{
   font-size: 20px;

@@ -399,9 +399,18 @@
       </div>
     </div>
   </div> -->
+  <div class="section bg-light">
+    <div class="video">
 
-<div class="section section-5 bg-light">
-
+      <div class="video-container">
+        
+        <iframe width="90%" height="100%" src="https://www.youtube.com/embed/ER_3mwZWVNs" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-container">
+        
+      <h3>Check out our youtube channel for more such videos </h3><a href="https://www.youtube.com/@EmitenceRealty" class="a"><img src="images/youtube.png" width="150px" alt=""><div class="youtube"><h4>@EmitenceRealty</h4></div></a>
+      </div>
+    </div>
 </div>
 <!-- ********************************************************************* -->
 
@@ -499,7 +508,30 @@ Lane Line No :- 022-47487058
   </div>
 
   </div>
+<script>
+  const videoContainers = document.querySelectorAll('.video-container');
+const popupOverlay = document.querySelector('.popup-overlay');
+const popupContent = document.querySelector('.popup-content');
+const closeBtn = document.querySelector('.close-btn');
+const popupVideo = document.getElementById('popup-video');
 
+videoContainers.forEach(container => {
+    container.addEventListener('click', () => {
+        const iframe = container.querySelector('.video-popup');
+        const videoSrc = iframe.getAttribute('src');
+        popupVideo.setAttribute('src', videoSrc);
+
+        popupOverlay.style.display = 'flex';
+    });
+});
+
+popupOverlay.addEventListener('click', (event) => {
+    if (event.target === popupOverlay || event.target === closeBtn) {
+        popupOverlay.style.display = 'none';
+        popupVideo.setAttribute('src', '');
+    }
+});
+</script>
 <!-- including footer -->
 <%- include('include/_footer')%>
 <!-- /including footer -->
