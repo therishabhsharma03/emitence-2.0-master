@@ -10818,3 +10818,10 @@ input[type="range"] {
             }
           }
   
+          .container.parallax {
+            background-image: url('path/to/your/image.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            height: 100vh; /* Set the height to cover the entire viewport */
+        }
